@@ -11,10 +11,10 @@ describe('LodItem.vue', () => {
       <lod-item :item="{
         '@id':'http://named-entity.lod.istex.fr/=/nom-de-personne',
         '@context':{
-          '_root':{
+          _root:{
             '@id':'http://purl.org/dc/terms/isPartOf'
           },
-          '_wid':{
+          _wid:{
             '@id':'http://purl.org/dc/elements/1.1/identifier'
           },
           _description:{
