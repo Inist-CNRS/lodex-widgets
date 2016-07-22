@@ -1,5 +1,5 @@
 <template>
-  <span about="{{about}}">{{id}}: {{title}}</span>
+  <span class="lod-item" about="{{about}}">{{id}}: {{title}}</span>
 </template>
 
 <script>
