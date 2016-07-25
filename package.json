@@ -11,6 +11,8 @@
     "url": "https://github.com/Inist-CNRS/lodex-widgets/issues"
   },
   "homepage": "https://github.com/Inist-CNRS/lodex-widgets#readme",
+  "version": "1.0.0",
+  "main": "dist/build.js",
   "scripts": {
     "watchify": "watchify -vd -p browserify-hmr -e src/main.js -o dist/build.js",
     "serve": "http-server -c 1 -a localhost",
