@@ -2,6 +2,8 @@
   "name": "lodex-widgets",
   "description": "Vue.js widgets for LODEX",
   "author": "François Parmentier <francois.parmentier@gmail.com>",
+  "version": "0.0.0",
+  "main": "dist/build.js",
   "scripts": {
     "watchify": "watchify -vd -p browserify-hmr -e src/main.js -o dist/build.js",
     "serve": "http-server -c 1 -a localhost",
