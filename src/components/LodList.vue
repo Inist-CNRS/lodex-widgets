@@ -1,5 +1,5 @@
 <template>
-  <div class="list-parts">
+  <div class="lod-list">
     <h1>{{title}}</h1>
     <ul>
     <li v-for="item in items">
@@ -23,7 +23,7 @@ export default {
     .then((items) => {
       this.items = items.data
     }, (error) => {
-      console.error('ListParts', error)
+      console.error('LodList', error)
     })
   },
 

@@ -1,7 +1,7 @@
 /* global describe, it, expect */
 
 import Vue from 'vue'
-import ListParts from '../../src/components/ListParts.vue'
+import LodList from '../../src/components/LodList.vue'
 // import namedEntity from './data/named-entity'
 
 // // See https://github.com/vuejs/vue-resource/issues/198
@@ -24,21 +24,21 @@ import ListParts from '../../src/components/ListParts.vue'
 
 // })
 
-describe('ListParts.vue', () => {
+describe('LodList.vue', () => {
   it('should render correct contents', () => {
     const vm = new Vue({
       template: `
       <div>
-      <list-parts
-        title="List Parts"
+      <lod-list
+        title="LOD List Parts"
         about="http://named-entity.lod.istex.fr/?alt=jsonld"
       >
-      </list-parts>
+      </lod-list>
       </div>`,
-      components: { ListParts }
+      components: { LodList }
     }).$mount()
-    expect(vm.$el.querySelector('.list-parts h1').textContent).toBe('List Parts')
-    // expect(vm.$el.querySelectorAll('.list-parts li').length).toBe(10)
+    expect(vm.$el.querySelector('.lod-list h1').textContent).toBe('LOD List Parts')
+    // expect(vm.$el.querySelectorAll('.lod-list li').length).toBe(10)
   })
 })
 
