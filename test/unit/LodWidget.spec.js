@@ -1,9 +1,9 @@
 /* global describe, it, expect */
 
 import Vue from 'vue'
-import LodexWidget from '../../src/components/LodexWidget.vue'
+import LodWidget from '../../src/components/LodWidget.vue'
 
-describe('LodexWidget.vue', () => {
+describe('LodWidget.vue', () => {
   it('should render correct contents', () => {
     const vm = new Vue({
       template: `
@@ -13,11 +13,11 @@ describe('LodexWidget.vue', () => {
           about="http://article-type.lod.istex.fr/=/research-article">
           research-article
         </p>
-        <lodex-widget
+        <lod-widget
           items-selector="p.target"
-        ></lodex-widget>
+        ></lod-widget>
       </div>`,
-      components: { LodexWidget }
+      components: { LodWidget }
     }).$mount()
     expect(vm.$el.querySelector('.html5tooltip-box')).toBeDefined()
   })

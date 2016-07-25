@@ -5,18 +5,18 @@
      about="http://named-entity.lod.istex.fr/?alt=jsonld"
     >
     </lod-list>
-    <lodex-widget items-selector=".lod-item"></lodex-widget>
+    <lod-widget items-selector=".lod-item"></lod-widget>
   </div>
 </template>
 
 <script>
 import LodList from './components/LodList.vue'
-import LodexWidget from './components/LodexWidget.vue'
+import LodWidget from './components/LodWidget.vue'
 
 export default {
   components: {
     LodList,
-    LodexWidget
+    LodWidget
   }
 }
 </script>

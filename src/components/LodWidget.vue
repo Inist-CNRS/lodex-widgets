@@ -64,7 +64,7 @@ export default {
           }
         )
       }, (error) => {
-        console.error('LodexWidget', error)
+        console.error('LodWidget', error)
       })
 
     }
