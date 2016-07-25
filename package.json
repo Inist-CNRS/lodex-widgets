@@ -2,6 +2,15 @@
   "name": "lodex-widgets",
   "description": "Vue.js widgets for LODEX",
   "author": "François Parmentier <francois.parmentier@gmail.com>",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Inist-CNRS/lodex-widgets.git"
+  },
+  "bugs": {
+    "url": "https://github.com/Inist-CNRS/lodex-widgets/issues"
+  },
+  "homepage": "https://github.com/Inist-CNRS/lodex-widgets#readme",
   "scripts": {
     "watchify": "watchify -vd -p browserify-hmr -e src/main.js -o dist/build.js",
     "serve": "http-server -c 1 -a localhost",
@@ -17,6 +26,10 @@
     ]
   },
   "dependencies": {
+    "html5tooltipsjs": "^1.5.1",
+    "jbj": "^7.0.0",
+    "jbj-rdfa": "^1.1.2",
+    "jbj-template": "^2.0.0",
     "vue": "^1.0.0",
     "vue-resource": "^0.9.3"
   },
