@@ -2,7 +2,7 @@
   <div id="app">
     <lod-list
      title="LOD List parts"
-     about="http://named-entity.lod.istex.fr/?alt=jsonld"
+     about="http://article-type.lod.istex.fr/?alt=jsonld"
     >
     </lod-list>
     <lod-widget items-selector=".lod-item"></lod-widget>
