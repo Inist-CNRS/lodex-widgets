@@ -4,7 +4,7 @@ import Vue from 'vue'
 import LodWidget from '../../src/components/LodWidget.vue'
 
 describe('LodWidget.vue', () => {
-  it('should render correct contents', () => {
+  it('should render correct contents', (done) => {
     const vm = new Vue({
       template: `
       <div>
@@ -19,7 +19,10 @@ describe('LodWidget.vue', () => {
       </div>`,
       components: { LodWidget }
     }).$mount()
-    expect(vm.$el.querySelector('.html5tooltip-box')).toBeDefined()
+    setTimeout(() => {
+      expect(vm.$el.querySelector('.html5tooltip-box')).toBeDefined()
+      done()
+    }, 1001)
   })
 })
 
