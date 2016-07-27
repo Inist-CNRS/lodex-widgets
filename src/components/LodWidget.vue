@@ -44,7 +44,7 @@ export default {
             (err, res) => {
               if (err) { console.error('JBJ', err); return }
               res = `
-                button onclick="closeTooltip('${uri}');" style="float:right">x</button>
+                <button onclick="closeTooltip('${uri}');" style="float:right">x</button>
                 <p><a href="${uri}">Source</a></p>
                 ${res}`
               tooltipOptions.contentText = res
@@ -94,6 +94,10 @@ export default {
     hideTooltip (event) {
       const tooltip = this.getTooltip(event.target)
       tooltip.hide()
+    },
+
+    closeTooltip (uri) {
+      this.tooltip[uri].hide()
     }
   },
 
