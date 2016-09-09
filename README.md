@@ -33,7 +33,7 @@ For more information see the [docs for vueify](https://github.com/vuejs/vueify).
 
 To list the JSON-LD items returned in an array from an URL, add the URL in the `about` attribute of the `lod-list` component.
 
-For this to work, you need to include the [`LodList.js`](https://npmcdn.com/lodex-widgets@1.0.1/dist/LodList.js) file.
+For this to work, you need to include the [`LodList.js`](https://unpkg.com/lodex-widgets@1.0.1/dist/LodList.js) file.
 ```html
 <!DOCTYPE html>
 <html lang="en">
